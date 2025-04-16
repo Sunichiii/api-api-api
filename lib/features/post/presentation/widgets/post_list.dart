@@ -12,7 +12,7 @@ class PostList extends StatelessWidget {
     return ListView.builder(
       itemCount: posts.length,
       itemBuilder: (context, index) {
-        return PostItem();
+        return PostItem(post: posts[index]);
       },
     );
   }
